@@ -7,5 +7,5 @@ type User @model {
 type Post @model {
   id: ID! @isUnique
   title: String!
-  author: User! @relation(name: "UserPosts")
+  author: User @relation(name: "UserPosts")
 }
