@@ -1,0 +1,13 @@
+types: ./types.graphql
+
+permissions:
+  - operation: User.read
+    fields: [name]
+
+  - operation: Post.read
+
+  - operation: User.create
+
+  - operation: Post.create
+
+  - operation: UserPosts.*
